@@ -1,0 +1,32 @@
+/sahel-api/
+├── config/
+│   └── db.js               # Connexion à la base de données MySQL
+│   └── multer.js           # Configuration du stockage des images
+│
+├── controllers/
+│   └── produitController.js
+│   └── utilisateurController.js
+│   └── authController.js
+│   └── photoController.js
+│
+├── models/
+│   └── produitModel.js
+│   └── utilisateurModel.js
+│   └── photoModel.js
+│
+├── routes/
+│   └── produitRoutes.js
+│   └── utilisateurRoutes.js
+│   └── authRoutes.js
+│   └── photoRoutes.js
+│
+├── middlewares/
+│   └── authMiddleware.js     # Vérification JWT
+│   └── errorHandler.js       # Gestion des erreurs
+│
+├── uploads/                  # Dossier pour stocker les images
+│
+├── .env
+├── app.js                    # Point d’entrée principal de l'app
+├── server.js                 # Lancement du serveur Express
+└── package.json

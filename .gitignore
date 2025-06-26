@@ -1,0 +1,18 @@
+# Frontend React
+/front/node_modules/
+/front/.env
+/front/dist/
+/front/build/
+
+# Backend Node.js
+/api/node_modules/
+/api/.env
+
+# Logs
+*.log
+
+# IDEs & systèmes
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
