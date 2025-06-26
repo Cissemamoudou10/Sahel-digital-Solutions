@@ -7,7 +7,7 @@ const realisationRoutes = require("./routes/realisationRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const corsOptions = {
-  origin: process.env.FRONTEND_URL, // ex: "https://monfrontend.com"
+  origin: process.env.FRONTEND_URL,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
