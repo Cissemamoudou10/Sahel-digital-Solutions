@@ -6,17 +6,18 @@ const authRoutes = require("./routes/authRoutes");
 const realisationRoutes = require("./routes/realisationRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
 
-const corsOptions = {
-  origin: process.env.FRONTEND_URL,
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-};
+// const corsOptions = {
+//   origin: process.env.FRONTEND_URL,
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+//   credentials: true,
+// };
 
 
 const app = express();
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
