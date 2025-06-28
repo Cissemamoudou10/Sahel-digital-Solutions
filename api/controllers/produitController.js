@@ -213,7 +213,6 @@ const getProductByDynamicSearch = async (req, res) => {
         ? `${fullUrl}${produit.imageUrl}`
         : null,
     }));
-
     res.json({
       total,
       page,
