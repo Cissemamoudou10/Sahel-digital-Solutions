@@ -13,7 +13,7 @@ const db = mysql.createPool({
 (async () => {
   try {
     const connection = await db.getConnection();
-    console.log("✅ Connexion à la base de données MySQL réussie !");
+    console.log("✅ Connexion à la base de données MySQL réussie sans probleme!");
     connection.release();
   } catch (error) {
     console.error("❌ Échec de la connexion à la base de données :", error.message);
