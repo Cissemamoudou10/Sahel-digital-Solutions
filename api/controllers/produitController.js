@@ -206,7 +206,9 @@ const getProductByDynamicSearch = async (req, res) => {
     });
 
     // Modifier chaque imageUrl
-    const fullUrl = `${req.protocol}://${req.get("host")}`;
+    // const fullUrl = `${req.protocol}://${req.get("host")}`;
+    const fullUrl = process.env.BASE_URL;
+
     const data = rows.map((produit) => ({
       ...produit,
       imageUrl: produit.imageUrl

@@ -205,7 +205,9 @@ const searchRealisations = async (req, res) => {
       order,
     });
 
-    const fullUrl = `${req.protocol}://${req.get("host")}`;
+    // const fullUrl = `${req.protocol}://${req.get("host")}`;
+    const fullUrl = process.env.BASE_URL;
+
     const data = rows.map((realisation) => ({
       ...realisation,
       imageUrl: realisation.imageUrl
