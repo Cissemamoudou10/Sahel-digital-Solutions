@@ -41,7 +41,7 @@ const getRealisationById = async (req, res) => {
 
     // Transformer le chemin relatif en URL complète
     if (realisation.imageUrl) {
-      realisation.imageUrl = `${req.protocol}://${req.get("host")}${
+      realisation.imageUrl = `${process.env.BASE_URL}${
         realisation.imageUrl
       }`;
     }

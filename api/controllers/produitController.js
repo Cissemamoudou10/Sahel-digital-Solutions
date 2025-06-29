@@ -35,7 +35,8 @@ const getProduitById = async (req, res) => {
     }
 
     // Construire l'URL absolue pour l'image
-    const baseUrl = `${req.protocol}://${req.get("host")}`; // ex: http://localhost:5000
+    // const baseUrl = `${req.protocol}://${req.get("host")}`; // ex: http://localhost:5000
+    const baseUrl = process.env.BASE_URL;
     const produitAvecUrlAbsolue = {
       ...produit,
       imageUrl: `${baseUrl}${produit.imageUrl}` // Pas de slash entre baseUrl et imageUrl car imageUrl commence déjà par /
